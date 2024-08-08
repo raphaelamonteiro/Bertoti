@@ -4,4 +4,4 @@ In a software engineering organization, we need to be more concerned about scale
 Finally, as software engineers, we are asked to make more complex decisions with higher-stakes outcomes, often based on imprecise estimates of time and growth.
 
 ## Comentário:
-Baseado no trecho, é possível notar que a engenharia de software, embora semelhante á área da programação possui características distintas, pois é mais relacionada á eficiência e escala, além da tomada de decisões mais complexas baseadas em estimativas imprecisas.
+Baseado no trecho, é possível notar que a engenharia de software, embora semelhante á área da programação possui características distintas, pois é mais relacionada ao tempo, escala e trade-offs, além da tomada de decisões mais complexas baseadas em estimativas imprecisas.
