@@ -75,4 +75,4 @@ Trade-off são as escolhas e as renúncias que vem com elas, que todo engenheiro
 
 ## O processo de trade-off de arquitetura de software é uma parte essencial do desenvolvimento de sistemas complexos e ajuda a garantir que as decisões tomadas estejam alinhadas com os objetivos do projeto e as restrições existentes.
 fonte: https://pt.linkedin.com/pulse/trade-off-cada-escolha-%C3%A9-uma-ren%C3%BAncia-cleber-da-silveira-wfupf
-https://www.softplan.com.br/tech-writers/aplicacoes-distribuidas-e-acoplamento-em-engenharia-de-software-valem-a-pena/
+
