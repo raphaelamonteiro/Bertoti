@@ -67,12 +67,14 @@ Trade-off são as escolhas e as renúncias que vem com elas, que todo engenheiro
 
 8. Documentação e Comunicação:
 - Registro das decisões de arquitetura, destacando os trade-offs feitos.
-- Comunique as escolhas e justificativas para a equipe de desenvolvimento, gerenciamento e outras partes interessadas.
 
 9. Avaliação Contínua:
 - Reavaliar periodicamente as decisões de arquitetura à medida que o projeto progride e novas informações se tornam disponíveis.
-- Esteja preparado para ajustar a arquitetura conforme necessário.
+- é de extrema imprtância estar sempre preparado para ajustar a arquitetura conforme necessário.
 
-## O processo de trade-off de arquitetura de software é uma parte essencial do desenvolvimento de sistemas complexos e ajuda a garantir que as decisões tomadas estejam alinhadas com os objetivos do projeto e as restrições existentes.
+### O processo de trade-off de arquitetura de software é uma parte essencial do desenvolvimento de sistemas complexos e ajuda a garantir que as decisões tomadas estejam alinhadas com os objetivos do projeto e as restrições existentes.
 fonte: https://pt.linkedin.com/pulse/trade-off-cada-escolha-%C3%A9-uma-ren%C3%BAncia-cleber-da-silveira-wfupf
 
+### Requisitos (necessidades do cliente):
+- Funcionais: tarefas e ações do sistema, geralmente exemplificadas por verbos (exemplo: realizar cadastro)
+- Não funcionais: qualidades do sistema (exemplo: linguagem de programação)
