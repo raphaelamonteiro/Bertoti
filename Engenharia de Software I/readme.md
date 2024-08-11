@@ -77,4 +77,4 @@ fonte: https://pt.linkedin.com/pulse/trade-off-cada-escolha-%C3%A9-uma-ren%C3%BA
 
 ### Requisitos (necessidades do cliente):
 - Funcionais: tarefas e ações do sistema, geralmente exemplificadas por verbos (exemplo: realizar cadastro)
-- Não funcionais: qualidades do sistema (exemplo: linguagem de programação)
+- Não funcionais: qualidades do sistema (exemplo: portabilidade)
