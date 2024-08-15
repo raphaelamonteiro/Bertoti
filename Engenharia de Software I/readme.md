@@ -44,6 +44,29 @@ Trade-off:
 
 - **Escolhendo Python:** Você sacrifica o desempenho e o controle fino dos recursos, mas ganha em facilidade e velocidade de desenvolvimento. Python é mais simples, com uma sintaxe mais limpa e uma grande quantidade de bibliotecas prontas para uso, o que acelera o processo de criação de protótipos e desenvolvimento de aplicações. No entanto, para aplicações que exigem desempenho máximo, Python pode não ser a melhor escolha, pois sua execução é mais lenta em comparação a C++.
 
+## Atividade III:
+Analisar os trade-offs de requisitos não-funcionais utilizados por uma arquitetura de empresa que utiliza tecnologia (exemplo: Netflix)
+
+### Empresa escolhida: Spotify 
+
+Sobre a empresa: O Spotify é um serviço de streaming de áudio e que possui popularidade global. 
+Com uma plataforma de **milhões de utilizadores, milhões de horas de episódios de podcasts e de mais de 70 milhões de músicas, é uma das plataformas de streaming com mais sucesso mundialmente, com aproximadamente 356 milhões de utilizadores, 158 milhões dos quais são utilizadores com uma subscrição premium paga.** 
+
+O Spotify veio revolucionar a maneira como a música era distribuída aos utilizadores, e à medida que começaram a aparecer novas tecnologias, como a forma como são transmitidos os dados, codificação das músicas, etc, o Spotify foi-se adaptando e hoje em dia é **considerado dos melhores e maiores serviços de streaming de música.**
+
+
+| Identificação | Requisito não funcional |
+|--- |--- |
+|RNF 01	| sistema de autenticação de usuário (Segurança)|
+|RNF 02	| Serviço de busca(base de dados)|
+|RNF 03	| Telas de interação responsivas(usabilidade)|
+|RNF 04	| Integração spotify e facebook()|
+|RNF 05	| Interface simples e interativa ao usuário (usabilidade)|
+|RNF 06	| Vinhetas durante a programação musical para quem está no modelo “Free”|
+|RNF 07	| Limitações de uso ao plano gratuito(usabilidade-controle de liberdade de usuário)|
+|RNF 08	| Vincular contas com PSN.|
+  
+
 
 ##
 # Anotações:
