@@ -32,6 +32,18 @@ Trade-off: Para garantir alta disponibilidade do sistema, é possível reduzir a
 ###  4. Custo vs. Desempenho
 Trade-off: Com um orçamento limitado reduzir custos pode significar optar por infraestrutura de menor desempenho, como servidores mais baratos ou menos redundância, o que pode impactar o tempo de resposta do sistema e seu desempenho.
 
+####  5. Desempenho vs. Facilidade de Desenvolvimento (C++ vs. Python)
+C++ é uma linguagem de baixo nível que permite um controle fino sobre recursos e memória, o que pode resultar em um desempenho extremamente alto. 
+
+No entanto, isso também torna o desenvolvimento mais complexo e propenso a erros, como vazamentos de memória.
+Python, por outro lado, é uma linguagem de alto nível, fácil de aprender e usar, e permite um desenvolvimento mais rápido e com menos código. 
+
+Trade-off: 
+- **Escolhendo C++:** Você ganha em desempenho e controle sobre o hardware, o que é crucial para aplicações que exigem alta eficiência e precisam lidar com recursos limitados, como jogos, sistemas embarcados, e software de tempo real. Porém, o desenvolvimento se torna mais complexo, exigindo mais esforço para gerenciar a memória manualmente, depurar problemas de alocação e lidar com detalhes de baixo nível. Isso aumenta a chance de erros como vazamentos de memória e torna o código mais difícil de manter.
+
+- **Escolhendo Python:** Você sacrifica o desempenho e o controle fino dos recursos, mas ganha em facilidade e velocidade de desenvolvimento. Python é mais simples, com uma sintaxe mais limpa e uma grande quantidade de bibliotecas prontas para uso, o que acelera o processo de criação de protótipos e desenvolvimento de aplicações. No entanto, para aplicações que exigem desempenho máximo, Python pode não ser a melhor escolha, pois sua execução é mais lenta em comparação a C++.
+
+
 ##
 # Anotações:
 Trade-off são as escolhas e as renúncias que vem com elas, que todo engenheiro de software precisa fazer durante o planejamento, desenvolvimento e manutenção de um software. Um exemplo clássico de trade-off é a escolha da linguagem de programação a ser utilizada durante o desenvolvimento, cada linguagem possui suas vantagens e desvantagens, e é necessário analizar as necessidades do cliente e fazer a escolha que melhor as atenda, para que o software consiga realizar o seu propósito.
