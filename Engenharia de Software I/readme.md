@@ -121,7 +121,7 @@ Para analisar os trade-offs de requisitos não-funcionais utilizados por uma arq
      - Mas, a alta manutenibilidade pode entrar em **conflito com outras prioridades**, como desempenho e segurança, especialmente se envolver reestruturações frequentes. **Sistemas altamente manuteníveis podem ser menos eficientes** em termos de desempenho e custo, devido à necessidade de suportar flexibilidade e extensibilidade.
 
 
-### Conclusão
+### Conclusão:
 A arquitetura da Visa deve equilibrar cuidadosamente esses requisitos não-funcionais para **oferecer um sistema seguro, eficiente e confiável.** Cada decisão de design envolve trade-offs que impactam a funcionalidade geral e a capacidade da Visa de atender às necessidades dos seus clientes, incluindo emissores, adquirentes, comerciantes e portadores de cartão.
 A Visa, como líder em pagamentos, precisa priorizar continuamente esses requisitos para manter sua posição no mercado e garantir uma experiência segura e eficiente para todos os usuários.
 
