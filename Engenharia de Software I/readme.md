@@ -53,7 +53,7 @@ Trade-off:
 Para analisar os trade-offs de requisitos não-funcionais utilizados por uma arquitetura da Visa no contexto de engenharia de software, podemos considerar os seguintes aspectos, observando como a Visa precisa equilibrar diferentes prioridades ao projetar sua arquitetura de sistema.
 
 ### 1. **Escalabilidade e Complexidade**
-   **Descrição**: A Visa precisa processar **milhões de transações por segundo globalmente.
+   **Descrição**: A Visa precisa processar **milhões de transações por segundo globalmente.**
    <br>
    **Trade-offs**:
       <br>
