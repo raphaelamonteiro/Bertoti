@@ -44,8 +44,8 @@ Trade-off:
 
 - **Escolhendo Python:** Você sacrifica o desempenho e o controle fino dos recursos, mas ganha em facilidade e velocidade de desenvolvimento. Python é mais simples, com uma sintaxe mais limpa e uma grande quantidade de bibliotecas prontas para uso, o que acelera o processo de criação de protótipos e desenvolvimento de aplicações. No entanto, para aplicações que exigem desempenho máximo, Python pode não ser a melhor escolha, pois sua execução é mais lenta em comparação a C++.
 
-## Atividade III:
-Analisar os trade-offs de requisitos não-funcionais utilizados por uma arquitetura de empresa que utiliza tecnologia 
+------------------------------------------------------------------------------------------------------------------------
+> :memo: **Atividade:** Analisar os trade-offs de requisitos não-funcionais utilizados por uma arquitetura de empresa que utiliza tecnologia. 
 
 <div align="center">
 <img src="VisaArquitetura.png">
@@ -53,52 +53,79 @@ Analisar os trade-offs de requisitos não-funcionais utilizados por uma arquitet
 Para analisar os trade-offs de requisitos não-funcionais utilizados por uma arquitetura da Visa no contexto de engenharia de software, podemos considerar os seguintes aspectos, observando como a Visa precisa equilibrar diferentes prioridades ao projetar sua arquitetura de sistema.
 
 ### 1. **Escalabilidade e Complexidade**
-   **Descrição**: A Visa precisa processar **milhões de transações por segundo globalmente.**
+   **Descrição**: A Visa precisa processar **milhões de transações por segundo globalmente.
+   <br>
    **Trade-offs**:
+      <br>
      - A escalabilidade é essencial para garantir que a rede da Visa possa lidar com o aumento do volume de transações, especialmente em períodos de pico como Black Friday ou Cyber Monday. Arquiteturas distribuídas e a utilização de data centers globais permitem escalar horizontalmente, adicionando mais recursos conforme necessário.
+     <br>
      - Porém, sistemas altamente escaláveis podem ser **mais complexos de manter e otimizar.** A replicação de dados para suportar a escalabilidade pode introduzir **desafios de consistência**, especialmente em sistemas distribuídos globalmente.
+
 
 ### 2. **Disponibilidade e Custo**
    **Descrição**: A rede de pagamento da Visa deve estar disponível 24/7 para garantir que as transações sejam processadas a qualquer momento.
+      <br>
    **Trade-offs**:
+      <br>
      - A **alta disponibilidade é crítica** para a confiança dos usuários e para o funcionamento das economias globais, evitando qualquer tempo de inatividade que possa prejudicar os negócios e os consumidores. Com isso, a Visa implementa o failover(tolerância a falhas) automático e redundância em sua infraestrutura para manter a disponibilidade contínua.
-     - Entretanto, manter uma alta disponibilidade pode ser caro, **exigindo investimentos significativos em infraestrutura e gerenciamento.** Há uma necessidade de **equilibrar entre disponibilidade e manutenção,** onde atualizações contínuas e correções de bugs precisam ser implementadas **sem interromper os serviços.**
+       <br>
+     - Entretanto, manter uma alta disponibilidade pode ser caro, **exigindo investimentos significativos em infraestrutura e gerenciamento.** Há uma necessidade de **equilibrar entre disponibilidade e manutenção,** onde atualizações contínuas e correções de bugs precisam ser implementadas **sem interromper os serviços.**     
 
 ### 3. **Desempenho e Concessões**
    **Descrição**: A Visa deve garantir que as transações sejam processadas em milissegundos.
+      <br>
    **Trade-offs**:
+      <br>
      - O desempenho rápido é fundamental para uma boa experiência do usuário e para permitir o processamento de grandes volumes de transações sem atrasos. Realizar otimizações de desempenho garantem que o sistema possa processar cada transação em tempo real.
+       <br>
      - Mas, melhorar o desempenho pode exigir concessões em termos de flexibilidade e capacidade de personalização do sistema. Há também o **risco de que otimizações específicas prejudiquem outros aspectos do sistema,** como a manutenibilidade ou escalabilidade.
+
 
 ### 4. **Segurança e Experiência do Usuário (Complexidade)**
    **Descrição**: A Visa deve proteger as informações financeiras dos usuários e garantir que as transações sejam seguras.
+      <br>
    **Trade-offs**:
+      <br>
      - A **segurança é um dos requisitos mais críticos**, dado que a Visa lida com informações financeiras sensíveis e grandes volumes de transações diárias. **Implementar criptografia robusta**, autenticação multifator e sistemas de detecção de fraude são essenciais para proteger os dados e a integridade das transações.
+<br>
      - Entretanto, implementar e manter altos padrões de segurança **pode impactar negativamente o desempenho e a experiência do usuário.** A segurança também pode aumentar a complexidade do sistema, tornando mais difícil a implementação de novas funcionalidades ou a adaptação a novas tecnologias.
+
 
 ### 5. **Consistência e Latência**
    **Descrição**: A Visa precisa garantir que todas as transações sejam processadas corretamente e que os saldos sejam atualizados em tempo real.
+      <br>
    **Trade-offs**:
+      <br>
      - **Consistência forte** garante que todas as partes envolvidas em uma transação tenham uma visão precisa e atualizada dos dados financeiros. É crucial para evitar erros financeiros que poderiam resultar em disputas ou perda de confiança na rede Visa.
+<br>
      - Por outro lado, garantir consistência forte, especialmente em um sistema distribuído, pode **aumentar a latência e reduzir a disponibilidade.**. Em algumas situações, a Visa pode optar por consistência eventual para melhorar o desempenho, com a condição de que os sistemas sejam projetados para resolver quaisquer inconsistências rapidamente.
+
 
 ### 6. **Resiliência e Complexidade/Custo**
    **Descrição**: O sistema da Visa deve ser resiliente a falhas e capaz de se recuperar rapidamente em caso de problemas.
+      <br>
    **Trade-offs**:
+      <br>
      - A resiliência é essencial para **garantir que as operações da Visa continuem, mesmo diante de falhas em componentes individuais ou ataques cibernéticos.** Mecanismos de fallback(contingência) e recuperação automática garantem que as transações possam ser completadas mesmo em situações adversas.
+  <br>
      - Porém, **aumentar a resiliência pode aumentar a complexidade da arquitetura**, bem como o custo de manutenção e operação. Testar e garantir a resiliência requer esforços contínuos, incluindo a implementação de ambientes redundantes e práticas de simulação de falhas.
+
 
 ### 7. **Manutenibilidade e Eficiência**
    **Descrição**: A Visa precisa manter e atualizar continuamente sua plataforma sem causar interrupções nos serviços.
+      <br>
    **Trade-offs**:
+      <br>
      - Manutenibilidade é **crucial para permitir atualizações frequentes e para a correção de bugs, garantindo que o sistema permaneça seguro e eficiente.** Uma arquitetura modular e bem documentada facilita as tarefas de manutenção e a introdução de novas funcionalidades.
+  <br>
      - Mas, a alta manutenibilidade pode entrar em **conflito com outras prioridades**, como desempenho e segurança, especialmente se envolver reestruturações frequentes. **Sistemas altamente manuteníveis podem ser menos eficientes** em termos de desempenho e custo, devido à necessidade de suportar flexibilidade e extensibilidade.
+
 
 ### Conclusão
 A arquitetura da Visa deve equilibrar cuidadosamente esses requisitos não-funcionais para **oferecer um sistema seguro, eficiente e confiável.** Cada decisão de design envolve trade-offs que impactam a funcionalidade geral e a capacidade da Visa de atender às necessidades dos seus clientes, incluindo emissores, adquirentes, comerciantes e portadores de cartão.
 A Visa, como líder em pagamentos, precisa priorizar continuamente esses requisitos para manter sua posição no mercado e garantir uma experiência segura e eficiente para todos os usuários.
 
-
+-----------------------------------------------------------------------------------------------------------------------------
 
 ##
 # Anotações:
