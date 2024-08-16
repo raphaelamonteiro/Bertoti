@@ -54,6 +54,83 @@ Com uma plataforma de **milhões de utilizadores, milhões de horas de episódio
 
 O Spotify veio revolucionar a maneira como a música era distribuída aos utilizadores, e à medida que começaram a aparecer novas tecnologias, como a forma como são transmitidos os dados, codificação das músicas, etc, o Spotify foi-se adaptando e hoje em dia é **considerado dos melhores e maiores serviços de streaming de música.**
 
+Arquitetura: 
+O Spotify usa arquitetura cliente-servidor para clientes móveis, e uma **rede peer-to-peer (P2P)** para os restantes clientes. Desta forma, os utilizadores fazem download do conteúdo e partilham uns com os outros.
+
+Analisar os trade-offs dos requisitos não-funcionais utilizados pela arquitetura do Spotify envolve avaliar como a empresa 
+equilibra diferentes aspectos do sistema para oferecer uma experiência robusta e escalável aos usuários. 
+
+### 1. **Escalabilidade**
+   **Descrição**: A capacidade de lidar com um grande número de usuários e aumentar ou diminuir recursos conforme necessário.
+   **Trade-offs**:
+   - **Prós**:
+     - O Spotify precisa de uma arquitetura altamente escalável para suportar milhões de usuários simultâneos, especialmente durante picos de uso.
+     - O uso de microservices e de uma arquitetura distribuída permite a escalabilidade horizontal, onde serviços podem ser escalados independentemente.
+   - **Contras**:
+     - Uma arquitetura escalável muitas vezes é mais complexa de desenvolver e manter, exigindo habilidades avançadas de engenharia.
+     - Pode haver uma sobrecarga adicional em termos de comunicação e coordenação entre microservices, o que pode introduzir latência.
+
+### 2. **Disponibilidade**
+   **Descrição**: A capacidade do sistema de estar disponível e operacional o máximo de tempo possível.
+   **Trade-offs**:
+   - **Prós**:
+     - Alta disponibilidade é crítica para garantir que os usuários possam acessar o serviço a qualquer momento, de qualquer lugar.
+     - A arquitetura distribuída com redundância e failover automático contribui para uma alta disponibilidade.
+   - **Contras**:
+     - Para garantir alta disponibilidade, a arquitetura precisa ser projetada para lidar com falhas, o que pode aumentar a complexidade e os custos de infraestrutura.
+     - A implementação de estratégias de recuperação de desastres e redundância pode aumentar a sobrecarga e o consumo de recursos.
+
+### 3. **Desempenho e Latência**
+   **Descrição**: O tempo que o sistema leva para responder a solicitações e fornecer conteúdo aos usuários.
+   **Trade-offs**:
+   - **Prós**:
+     - O Spotify deve fornecer uma experiência de streaming rápida e sem interrupções, o que requer baixa latência e alto desempenho.
+     - O uso de CDN (Content Delivery Networks) e cache distribuído ajuda a reduzir a latência para usuários globalmente.
+   - **Contras**:
+     - Para alcançar baixa latência, pode ser necessário replicar dados em vários locais, o que aumenta a complexidade e o custo de sincronização de dados.
+     - Melhorar o desempenho pode significar comprometer a consistência imediata em sistemas distribuídos, optando por consistência eventual em algumas situações.
+
+### 4. **Resiliência**
+   **Descrição**: A capacidade do sistema de se recuperar de falhas e continuar operando normalmente.
+   **Trade-offs**:
+   - **Prós**:
+     - Resiliência é essencial para garantir que o Spotify continue funcionando mesmo em caso de falhas de componentes individuais ou ataques.
+     - Mecanismos como Circuit Breaker, retries e fallback garantem que o sistema se recupere de falhas temporárias.
+   - **Contras**:
+     - Implementar resiliência adiciona complexidade ao código e pode introduzir latências adicionais quando circuit breakers são acionados.
+     - Sistemas resilientes podem exigir mais recursos (CPU, memória, etc.) para lidar com a recuperação de falhas.
+
+### 5. **Manutenibilidade**
+   **Descrição**: A facilidade com que o sistema pode ser mantido, corrigido e atualizado.
+   **Trade-offs**:
+   - **Prós**:
+     - A adoção de microservices e arquitetura modular aumenta a manutenibilidade, permitindo que equipes independentes trabalhem em diferentes partes do sistema.
+     - Atualizações e correções podem ser realizadas em serviços específicos sem impactar o sistema como um todo.
+   - **Contras**:
+     - A alta manutenibilidade em uma arquitetura de microservices pode vir ao custo de maior complexidade operacional e sobrecarga na gestão de dependências entre serviços.
+     - Há um trade-off entre a simplicidade e a divisão granular dos serviços, que pode tornar a manutenção mais difícil se não for bem gerenciada.
+
+### 6. **Consistência**
+   **Descrição**: Garantir que todos os dados sejam consistentes em todo o sistema, especialmente em um ambiente distribuído.
+   **Trade-offs**:
+   - **Prós**:
+     - Consistência forte garante que todos os usuários vejam o mesmo estado dos dados simultaneamente, o que é crucial para certos cenários, como gerenciamento de playlists e contagem de reproduções.
+   - **Contras**:
+     - Em um sistema distribuído, alcançar consistência forte pode afetar a disponibilidade e o desempenho devido à latência na comunicação entre diferentes datacenters.
+     - Muitas vezes, o Spotify opta por consistência eventual para melhorar a escalabilidade e desempenho, aceitando que os dados possam estar temporariamente inconsistentes.
+
+### 7. **Segurança**
+   **Descrição**: Proteção do sistema contra acessos não autorizados e ataques.
+   **Trade-offs**:
+   - **Prós**:
+     - Segurança é fundamental para proteger dados dos usuários e garantir conformidade com regulações de privacidade.
+     - Medidas como criptografia de dados em trânsito e em repouso, autenticação multifator, e monitoramento contínuo são essenciais.
+   - **Contras**:
+     - Medidas de segurança adicionais podem aumentar a latência e reduzir a experiência do usuário, como a necessidade de autenticação adicional.
+     - Implementar segurança robusta pode aumentar a complexidade e custo de desenvolvimento e operação.
+
+### Conclusão
+A arquitetura do Spotify precisa equilibrar cuidadosamente esses requisitos não-funcionais para garantir uma experiência de usuário de alta qualidade. Cada decisão sobre escalabilidade, disponibilidade, desempenho, resiliência, manutenibilidade, consistência e segurança envolve trade-offs que impactam o sistema de maneiras diferentes. A chave para o sucesso do Spotify é gerenciar esses trade-offs de maneira eficaz para atender às expectativas dos usuários enquanto mantém a operação do serviço a nível global.
 
 | Identificação | Requisito não funcional |
 |--- |--- |
