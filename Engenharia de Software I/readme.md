@@ -126,7 +126,13 @@ A arquitetura da Visa deve equilibrar cuidadosamente esses requisitos não-funci
 A Visa, como líder em pagamentos, precisa priorizar continuamente esses requisitos para manter sua posição no mercado e garantir uma experiência segura e eficiente para todos os usuários.
 
 -----------------------------------------------------------------------------------------------------------------------------
+# Aula IV
+https://huggingface.co/blog/vlms
 
+VLM (VIsual Language Model): Arquitetura Multimodal 
+
+
+-----------------------------------------------------------------------------------------------------------------------------
 ##
 # Anotações:
 Trade-off são as escolhas e as renúncias que vem com elas, que todo engenheiro de software precisa fazer durante o planejamento, desenvolvimento e manutenção de um software. Um exemplo clássico de trade-off é a escolha da linguagem de programação a ser utilizada durante o desenvolvimento, cada linguagem possui suas vantagens e desvantagens, e é necessário analizar as necessidades do cliente e fazer a escolha que melhor as atenda, para que o software consiga realizar o seu propósito.
@@ -173,3 +179,13 @@ fonte: https://pt.linkedin.com/pulse/trade-off-cada-escolha-%C3%A9-uma-ren%C3%BA
 ### Requisitos (necessidades do cliente):
 - Funcionais: tarefas e ações do sistema, geralmente exemplificadas por verbos (exemplo: realizar cadastro)
 - Não funcionais: qualidades do sistema (exemplo: portabilidade)
+
+### Multimodal:
+Modelos multimodais são sistemas de IA projetados para processar e interpretar múltiplas formas de dados simultaneamente.<br>
+Incluindo textos, imagens, áudios e até dados sensoriais, permitindo uma análise mais holística(inteira) e uma geração de conteúdo mais integrada. 
+- Um exemplo clássico é um sistema que pode analisar uma imagem e gerar uma descrição textual detalhada, ou vice-versa, compreender um texto e gerar uma imagem correspondente.
+
+Esses modelos são amplamente utilizados em diversas aplicações práticas. 
+- No reconhecimento de imagem e texto, por exemplo, eles podem identificar objetos em uma foto e descrevê-los em palavras.
+- Na tradução automática, os modelos multimodais podem usar imagens para contextualizar melhor as traduções, resultando em uma maior precisão.
+- Na geração de conteúdo, eles podem criar descrições detalhadas para vídeos ou gerar novas imagens a partir de descrições textuais, ampliando as possibilidades criativas.
