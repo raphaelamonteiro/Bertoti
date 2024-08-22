@@ -129,7 +129,10 @@ A Visa, como líder em pagamentos, precisa priorizar continuamente esses requisi
 # Aula IV
 https://huggingface.co/blog/vlms
 
-VLM (VIsual Language Model): Arquitetura Multimodal 
+VLM (VIsual Language Model): Modelo com arquitetura **multimodal** que aprende e associa por meio de imagens e textos.<br>
+Um tipo de IA generativa que recebe como entrada(input) imagens e textos e, como saída gera texto. Consegue analisar diversos tipos de imagins, incluindo documentos, páginas web, etc.<br>
+
+Conseguem, também responder questões sobre as imagens fornecidas, seja posição de algum objeto, interpretação da imagem...
 
 
 -----------------------------------------------------------------------------------------------------------------------------
