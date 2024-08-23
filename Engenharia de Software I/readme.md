@@ -136,6 +136,10 @@ Consegue analisar diversos tipos de imagens, incluindo documentos, páginas web,
 
 
 -----------------------------------------------------------------------------------------------------------------------------
+# Aula V
+> :memo: **Atividade:** Fazer classes UML ao lado de código java mostrando a relação entre eles como fizemos no quadro
+
+-----------------------------------------------------------------------------------------------------------------------------
 ##
 # Anotações:
 Trade-off são as escolhas e as renúncias que vem com elas, que todo engenheiro de software precisa fazer durante o planejamento, desenvolvimento e manutenção de um software. Um exemplo clássico de trade-off é a escolha da linguagem de programação a ser utilizada durante o desenvolvimento, cada linguagem possui suas vantagens e desvantagens, e é necessário analizar as necessidades do cliente e fazer a escolha que melhor as atenda, para que o software consiga realizar o seu propósito.
