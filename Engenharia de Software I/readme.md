@@ -139,7 +139,9 @@ Consegue analisar diversos tipos de imagens, incluindo documentos, páginas web,
 # Aula V
 > :memo: **Atividade:** Fazer classes UML ao lado de código java mostrando a relação entre eles como fizemos no quadro
 
- :computer: Diagrama de classes UML: Sistema de Gerenciamento de Rede
+ :computer: Diagrama de classes UML: Sistema de Gerenciamento de Rede de Dados
+
+ <img align="center" src="Diagrama UML (Bertoti).jpg">
  
 -----------------------------------------------------------------------------------------------------------------------------
 ##
