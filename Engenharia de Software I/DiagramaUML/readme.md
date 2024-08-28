@@ -39,3 +39,6 @@ Biblioteca e Usuario:
 Biblioteca contém métodos para adicionar e remover Usuarios de sua lista.
 Usuario e Livro:
 Usuario interage com Livro através de métodos como emprestarLivro e devolverLivro.
+
+
+https://www.ibm.com/docs/pt-br/rsas/7.5.0?topic=diagrams-association-classes
