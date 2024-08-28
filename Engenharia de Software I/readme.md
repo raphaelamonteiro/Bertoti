@@ -141,7 +141,7 @@ Consegue analisar diversos tipos de imagens, incluindo documentos, páginas web,
 
  :computer: Diagrama de classes UML: Sistema de Gerenciamento de Biblioteca
 
- <img align="center" src="/DiagramaUML/Diagrama UML (Bertoti).jpg">
+ <img align="center" src="DiagramaUML/BibliotecaUML.jpg">
  
 -----------------------------------------------------------------------------------------------------------------------------
 ##
