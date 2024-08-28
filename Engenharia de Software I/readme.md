@@ -144,7 +144,7 @@ Consegue analisar diversos tipos de imagens, incluindo documentos, páginas web,
  <img align="center" src="DiagramaUML/BibliotecaUML.jpg">
 
 Acesso ao código Java:
- <a href="Engenharia de Software I/DiagramaUML/BibliotecaBertoti/src/Biblioteca](https://github.com/raphaelamonteiro/Bertoti/tree/main/Engenharia%20de%20Software%20I/DiagramaUML/BibliotecaBertoti)"> Clique Aqui! </a>
+ <a href="https://github.com/raphaelamonteiro/Bertoti/tree/fbfb184c82030d92297435932aadc7249dbae2a3/Engenharia%20de%20Software%20I/DiagramaUML/BibliotecaBertoti"> Clique Aqui! </a>
  
 -----------------------------------------------------------------------------------------------------------------------------
 ##
